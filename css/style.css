@@ -25,6 +25,26 @@ a{
     padding: 0 10px;
 }
 
+.message {
+    background: #35B8BE;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.message__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.message__link {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
 .menu__wrapping {
     display: flex;
     min-height: 100px;
@@ -77,6 +97,7 @@ a{
     padding-top: 100px;
     margin-bottom: 140px;
     background-image: url(../img/header__bg2.jpg);
+    background-size: cover;
 }
 
 .header__wrapping {
@@ -135,6 +156,7 @@ a{
 
 .products {
     background-image: url(../img/products__bg2.jpg);
+    background-size: cover;
 }
 
 .products__wrapping {
@@ -225,7 +247,9 @@ a{
 .browsing {
     background-image: url(../img/browsing__bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 154px;
+    padding-bottom: 140px;
 }
 
 .browsing__title {
@@ -366,13 +390,13 @@ a{
 
 .browsing__button2 {
     text-align: center;
-    margin-bottom: 260px;
 }
 
 .ordering__wrapping {
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
+    margin-top: 120px;
 }
 
 .ordering__wrapping-bg {
@@ -541,4 +565,26 @@ a{
 
 .footer__icon {
     margin-right: 24px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
 }
